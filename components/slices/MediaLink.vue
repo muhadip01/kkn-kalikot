@@ -21,6 +21,11 @@ export default {
 <style lang="sass" scoped>
 .media-sec
     display: flex
+    flex-wrap : wrap
+
+.media-item
+    width: 28%
+    margin-right: 25px
 
 .link-img
     width: 250px
