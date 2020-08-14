@@ -40,5 +40,8 @@ export default {
   .highlight-left, .highlight-right
     width: 100%
     float: none
+    display: block
+    position: relative
+    height: auto
 </style>
 

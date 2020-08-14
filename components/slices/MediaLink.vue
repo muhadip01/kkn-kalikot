@@ -31,4 +31,12 @@ export default {
     width: 250px
     margin-right: 50px
 
+@media (max-width: 767px)
+  .content-section
+    margin-bottom: 2rem
+  .highlight-left, .highlight-right
+    width: 100%
+    float: none
+    display: block
+
 </style>
