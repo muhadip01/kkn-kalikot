@@ -7,6 +7,9 @@
       <prismic-rich-text :field="slice.primary.title"/>
       <prismic-rich-text :field="slice.primary.headline"/>
       <p>
+        {{ $prismic.asText(slice.primary.highlight_description) }}
+      </p>
+      <p>
         <prismic-link :field="slice.primary.link">{{ $prismic.asText(slice.primary.link_label) }}</prismic-link>
       </p>
     </div>
