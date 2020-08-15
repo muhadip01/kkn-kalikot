@@ -30,6 +30,10 @@
             <template v-else-if="slice.slice_type === 'media'">
                 <media-link :slice="slice"/>
             </template>
+            <!-- single media link slice component -->
+            <template v-else-if="slice.slice_type === 'single_media'">
+                <single-media :slice="slice"/>
+            </template>
         </section>
     </div>
 </template>
@@ -43,6 +47,7 @@ const ImageGallery = () => import("./slices/ImageGallery.vue");
 const ImageHighlight = () => import("./slices/ImageHighlight.vue");
 const VideoSlice = () => import("./slices/VideoSlice.vue");
 const MediaLink = () => import("./slices/MediaLink.vue");
+const SingleMedia = () => import("./slices/SingleMedia.vue");
 
 export default {
   props: ['slices'],
@@ -54,7 +59,8 @@ export default {
     ImageGallery,
     ImageHighlight,
     VideoSlice,
-    MediaLink
+    MediaLink,
+    SingleMedia
   },
 }
 </script>
