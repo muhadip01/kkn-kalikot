@@ -31,8 +31,12 @@
                 <media-link :slice="slice"/>
             </template>
             <!-- single media link slice component -->
-            <template v-else-if="slice.slice_type === 'single_media'">
+            <template v-else-if="slice.slice_type === 'single-media'">
                 <single-media :slice="slice"/>
+            </template>
+            <!-- image text keren link slice component -->
+            <template v-else-if="slice.slice_type === 'image_text'">
+                <image-text :slice="slice"/>
             </template>
         </section>
     </div>
@@ -48,6 +52,7 @@ const ImageHighlight = () => import("./slices/ImageHighlight.vue");
 const VideoSlice = () => import("./slices/VideoSlice.vue");
 const MediaLink = () => import("./slices/MediaLink.vue");
 const SingleMedia = () => import("./slices/SingleMedia.vue");
+const ImageText = () => import("./slices/ImageText.vue");
 
 export default {
   props: ['slices'],
@@ -60,7 +65,8 @@ export default {
     ImageHighlight,
     VideoSlice,
     MediaLink,
-    SingleMedia
+    SingleMedia,
+    ImageText
   },
 }
 </script>
