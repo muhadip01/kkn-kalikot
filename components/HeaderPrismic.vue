@@ -26,6 +26,7 @@ export default {
   padding: 20px 0
   color: #484d52
   font-weight: 700
+  z-index: 6666
   a
     color: #484d52
     font-weight: 700

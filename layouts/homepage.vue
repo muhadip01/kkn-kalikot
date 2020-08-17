@@ -20,7 +20,7 @@ export default {
   },
   head () {
     return {
-      title: 'Kalkots',
+      title: 'Kalikotes',
     }
   },
   // Called before rendering the layout (even for error page)

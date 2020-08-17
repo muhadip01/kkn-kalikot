@@ -66,7 +66,7 @@ export default {
     VideoSlice,
     MediaLink,
     SingleMedia,
-    ImageText
+    ImageText,
   },
 }
 </script>

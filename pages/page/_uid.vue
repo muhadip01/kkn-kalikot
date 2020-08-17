@@ -16,7 +16,7 @@ export default {
   },
   head () {
     return {
-      title: 'Kalkots',
+      title: 'Kalikotes',
     }
   },
   async asyncData({ $prismic, params, error }) {

@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-      <prismic-image :field="slice.primary.keren_image"/>
+      <prismic-image class="hero-img" :field="slice.primary.keren_image"/>
       <div class="page-title">
         <prismic-rich-text class="header-page" :field="slice.primary.keren_title"/>
       </div>
@@ -16,12 +16,16 @@ export default {
 
 <style scoped>
 .hero{
-  margin: 0px 0 100px;
-  padding: 3em 20px 0;
+  margin: 20px 0 80px;
+  padding: 0em 0px 0;
   background-position: center center;
   background-size: cover;
   position: relative;
 } 
+.hero-img{
+  width: 100%;
+  height: 400px
+}
 .header-page{
   font-size: 4vw;
 }
