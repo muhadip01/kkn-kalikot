@@ -48,13 +48,17 @@ export default {
 }
 @media (max-width: 767px) {
   .hero{
-    margin: 20px 0 60px;
+    margin: 20px 0 -75px;
     height: 50vh;
     padding: 0;
   }
+  .hero-img{
+  width: 100%;
+  height: 250px
+  }
   .page-title{
     padding: 1em 2em;
-    bottom: -30px;
+    bottom: 105px;
   }
   .header-page{
     font-size: 32px;
